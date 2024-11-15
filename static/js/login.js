@@ -41,7 +41,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     if (authorizedUsers[username] === password) {
         loggedInUsername = username;
         // Redirect to new page if credentials are correct
-        window.location.href = "chatbot.html"; // Change to the URL of your desired page
+        window.location.href = "/static/chatbot.html"; // Change to the URL of your desired page
     } else {
         // Display error message if credentials are incorrect
         errorMessage.style.display = 'block';

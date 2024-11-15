@@ -5,7 +5,7 @@ let full_prompt = "";
 // Function to load the user's role from user_role.json
 async function loadUserRole() {
     try {
-        const response = await fetch('user_role.json');
+        const response = await fetch('static/user_role.json');
         const data = await response.json();
         const userRole = data.user_role.find(user => user.username === loggedInUsername);
 
@@ -86,5 +86,5 @@ function selectPrompt() {
 
 // Function to end the session and redirect to the login page
 function endSession() {
-    window.location.href = "index.html";
+    window.location.href = "/static/index.html";
 }
