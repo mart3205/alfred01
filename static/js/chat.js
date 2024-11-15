@@ -1,29 +1,4 @@
-// Variable to store the addendum and full_prompt
-let addendum = "";
-let full_prompt = "";
 
-// Function to load the user's role from user_role.json
-async function loadUserRole() {
-    try {
-        const response = await fetch('user_role.json');
-        const data = await response.json();
-        const userRole = data.user_role.find(user => user.username === loggedInUsername);
-
-        // Determine the addendum based on the user's role
-        if (userRole && userRole.role === "operador") {
-            addendum = ` y filtra los datos solo para el nomina_user = ${loggedInUsername}`;
-        } else {
-            addendum = "";
-        }
-    } catch (error) {
-        console.error("Error loading user role:", error);
-    }
-}
-
-// Call loadUserRole on page load
-window.onload = async function() {
-    await loadUserRole();
-};
 
 // Function to display messages in the chat area
 function displayMessage(content, isUserMessage = true) {
@@ -47,8 +22,8 @@ async function sendMessage() {
     const message = userInput.value.trim();
 
     if (message) {
-        full_prompt = message + addendum;  // Concatenate user message with addendum
-        displayMessage(full_prompt);       // Display full prompt in chat
+         
+        displayMessage(message);       // Display full prompt in chat
         userInput.value = "";
 
         try {
@@ -58,7 +33,7 @@ async function sendMessage() {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    question: full_prompt,
+                    question: message,
                     sessionId: "defaultSession",
                     endSession: false
                 })
