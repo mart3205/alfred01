@@ -1,4 +1,4 @@
-
+const apiBaseUrl = "http://http://35.92.21.129:5000/";
 
 // Function to display messages in the chat area
 function displayMessage(content, isUserMessage = true) {
@@ -22,12 +22,11 @@ async function sendMessage() {
     const message = userInput.value.trim();
 
     if (message) {
-         
         displayMessage(message);       // Display full prompt in chat
         userInput.value = "";
 
         try {
-            const response = await fetch('http://127.0.0.1:5000/ask', {
+            const response = await fetch(`${apiBaseUrl}/ask`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -49,7 +48,6 @@ async function sendMessage() {
         }
     }
 }
-
 // Function to select a prompt from the dropdown and set it to the input box
 function selectPrompt() {
     const promptSelect = document.getElementById('promptSelect');
