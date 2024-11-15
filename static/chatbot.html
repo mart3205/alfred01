@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Alfred</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./images/logo.png" alt="Chat Alfred Logo" class="logo">
+        <h1 class="title">Chat Alfred para Asesores</h1>
+        <button class="end-session" onclick="endSession()">Salir</button>
+    </header>
+    <div class="container">
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Suggested Prompts Select Box -->
+            <div class="suggested-prompts">
+                <label for="promptSelect">Preguntas Sugeridas:</label>
+                <select id="promptSelect" onchange="selectPrompt()">
+                    <option value="">Selecciona una pregunta</option>
+                    <option value="Top 5 de tiendas con mayor venta neta en agosto">Top 5 de tiendas con mayor venta neta en agosto</option>
+                    <option value="Promedio de ventas netas en julio">Promedio de ventas netas en julio</option>
+                    <option value="Tiendas con menor evaluacion operativa en febrero">Tiendas con menor evaluacion operativa en febrero</option>
+                    <option value="Tiendas con menor merma neta en mayo">Tiendas con menor uafir en mayo</option>
+                </select>
+            </div>
+            <br>
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="Escribe tu pregunta aquí..." />
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+            <br>
+            <!-- Chat Display Area -->
+            <div class="chat-area" id="chatArea">
+                <!-- Messages will appear here -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="./js/chat.js"></script>
+</body>
+</html>

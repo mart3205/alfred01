@@ -1,0 +1,26 @@
+{
+    [
+        {"username" : "1494646", "role" : "operador"},
+        {"username" : "1480774", "role" : "operador"},
+        {"username" : "3556594", "role" : "operador"},
+        {"username" : "112815", "role" : "operador"},
+        {"username" : "1432738", "role" : "operador"},
+        {"username" : "115000", "role" : "operador"},
+        {"username" : "1351540", "role" : "operador"},
+        {"username" : "1744800", "role" : "operador"},
+        {"username" : "3062261", "role" : "operador"},
+        {"username" : "1412058", "role" : "admin"},
+        {"username" : "3448457", "role" : "admin"},
+        {"username" : "1308411", "role" : "admin"},
+        {"username" : "498269", "role" : "admin"},
+        {"username" : "3301687", "role" : "admin"},
+        {"username" : "5100787", "role" : "admin"},
+        {"username" : "112428", "role" : "admin"},
+        {"username" : "11111", "role" : "admin"},
+        {"username" : "22222", "role" : "admin"},
+        {"username" : "33333", "role" : "admin"},
+        {"username" : "44444", "role" : "admin"},
+        {"username" : "5179851", "role" : "admin"},
+        {"username" : "3014648", "role" : "admin"}
+    ]   
+}
