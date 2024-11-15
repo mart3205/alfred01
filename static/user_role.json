@@ -1,5 +1,5 @@
 {
-    [
+    "user_role": [
         {"username" : "1494646", "role" : "operador"},
         {"username" : "1480774", "role" : "operador"},
         {"username" : "3556594", "role" : "operador"},
@@ -22,5 +22,5 @@
         {"username" : "44444", "role" : "admin"},
         {"username" : "5179851", "role" : "admin"},
         {"username" : "3014648", "role" : "admin"}
-    ]   
+    ]
 }
