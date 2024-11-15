@@ -1,4 +1,4 @@
-const apiBaseUrl = "http://http://35.92.21.129:5000/";
+const apiBaseUrl = "http://35.92.21.129:5000/";
 
 // Function to display messages in the chat area
 function displayMessage(content, isUserMessage = true) {
