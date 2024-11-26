@@ -40,6 +40,10 @@ font-family: 'Poppins','sans-serif';
     height: 60px; /* Increased logo size */
 }
 
+.chat-logo {
+    height: 50px; /* Slightly smaller height for the chatbot icon */
+}
+
 .title {
     font-size: 1.8em; /* Larger font size */
     color: #ffffff;
@@ -48,7 +52,7 @@ font-family: 'Poppins','sans-serif';
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .logo {
+    .logo,.chat-logo {
         height: 50px;
     }
     .title {
@@ -57,7 +61,7 @@ font-family: 'Poppins','sans-serif';
 }
 
 @media (max-width: 480px) {
-    .logo {
+    .logo, .chat-logo {
         height: 40px;
     }
     .title {
