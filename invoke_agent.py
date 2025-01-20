@@ -60,7 +60,7 @@ def askQuestion(question, url, endSession=False):
         method='POST',
         service='bedrock',
         headers={
-            'content-type': 'application/json', 
+            'content-type': 'application/json',
             'accept': 'application/json',
         },
         region=theRegion,

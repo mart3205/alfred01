@@ -8,7 +8,6 @@ import logging
 app = Flask(__name__, static_folder='static')
 CORS(app)  # Allow requests from all origins for simplicity
 
-# Load environment variables
 # Agent details
 agentId = "7KMZ9NREMV"  # INPUT YOUR AGENT ID HERE
 agentAliasId = "RON5HYUCQB"  # INPUT YOUR AGENT ALIAS ID HERE
