@@ -11,22 +11,25 @@ CORS(app)  # Allow requests from all origins for simplicity
 # Load environment variables
 # Agent details
 agentId = "7KMZ9NREMV"  # INPUT YOUR AGENT ID HERE
-agentAliasId = "6WP9QSOXDY"  # INPUT YOUR AGENT ALIAS ID HERE
+agentAliasId = "RON5HYUCQB"  # INPUT YOUR AGENT ALIAS ID HERE
 theRegion = "us-west-2"
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(message)s')
 logger = logging.getLogger()
 
+
 @app.route('/')
 def serve_index():
     """Serve the index.html page."""
     return send_from_directory(app.static_folder, 'index.html')
 
+
 @app.route('/chatbot')
 def serve_chatbot():
     """Serve the chatbot.html page."""
     return send_from_directory(app.static_folder, 'chatbot.html')
+
 
 @app.route('/ask', methods=['POST'])
 def ask():
@@ -47,6 +50,7 @@ def ask():
     except Exception as e:
         logger.error(f"Error occurred: {e}")
         return jsonify({"error": "An error occurred while processing your request."}), 500
+
 
 if __name__ == '__main__':
     # Ensure debug mode is off in production

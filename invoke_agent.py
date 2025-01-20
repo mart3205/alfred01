@@ -14,7 +14,8 @@ region = os.environ.get("AWS_REGION")
 
 # Agent details
 agentId = "7KMZ9NREMV"  # INPUT YOUR AGENT ID HERE
-agentAliasId = "6WP9QSOXDY"  # INPUT YOUR AGENT ALIAS ID HERE
+agentAliasId = "RON5HYUCQB"  # INPUT YOUR AGENT ALIAS ID HERE
+
 
 def sigv4_request(
     url,
@@ -44,6 +45,7 @@ def sigv4_request(
         data=req.body
     )
 
+
 def askQuestion(question, url, endSession=False):
     # Prepare the payload
     payload = {
@@ -67,6 +69,7 @@ def askQuestion(question, url, endSession=False):
 
     return decode_response(response)
 
+
 def decode_response(response):
     # Process and decode the response
     response_content = ""
@@ -85,6 +88,7 @@ def decode_response(response):
         # Extract final response from the JSON response
         response_json = json.loads(response_content)
         return response_json.get('text', 'No valid response found')
+
 
 # Example usage
 def lambda_handler(event, context):
