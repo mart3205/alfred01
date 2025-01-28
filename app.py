@@ -10,7 +10,7 @@ CORS(app)  # Allow requests from all origins for simplicity
 
 # Agent details
 agentId = "DRGPKYM3JW"  # INPUT YOUR AGENT ID HERE
-agentAliasId = "S5WRIH3REG"  # INPUT YOUR AGENT ALIAS ID HERE
+agentAliasId = "AKG7ZHYOZQ"  # INPUT YOUR AGENT ALIAS ID HERE
 theRegion = "us-west-2"
 
 # Configure logging
