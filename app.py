@@ -9,8 +9,8 @@ app = Flask(__name__, static_folder='static')
 CORS(app)  # Allow requests from all origins for simplicity
 
 # Agent details
-agentId = "DRGPKYM3JW"  # INPUT YOUR AGENT ID HERE
-agentAliasId = "HICHU2ZOGY"  # INPUT YOUR AGENT ALIAS ID HERE
+agentId = "DKUHKULVQG"  # INPUT YOUR AGENT ID HERE
+agentAliasId = "WJRSHN04PH"  # INPUT YOUR AGENT ALIAS ID HERE
 theRegion = "us-west-2"
 
 # Configure logging
